@@ -1,8 +1,23 @@
+import "./App.css"
+import Head from "./components/Head";
 
 function App() {
   return (
     <div>
-      <h1>Namaste React</h1>
+      <Head/>
+      {/**
+       * 
+       * Head
+       * Body
+       * Sidebar
+       *  MenuItems
+       * MainContainer
+       *  ButtonList
+       *  VideoContainer
+       *    VideoCard
+       *  
+       * 
+       */}
     </div>
   );
 }
