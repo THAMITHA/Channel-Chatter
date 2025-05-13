@@ -5,8 +5,8 @@ const buttonNames = ["All", "Gaming", "Songs", "Live", "Songs", "Live", "Socker"
 export const ButtonList = () => {
   return (
     <div className='flex'>
-      {buttonNames.map((name)=>(
-        <Button key={name} name={name}/>
+      {buttonNames.map((name, idx)=>(
+        <Button key={idx}>{name={name}}</Button>
       ))}
     </div>
   )
