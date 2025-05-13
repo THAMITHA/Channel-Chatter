@@ -18,6 +18,21 @@ const Head = () => {
     }
   }, [searchQuery])
 
+  /**
+   * key - i
+   * - render the component
+   * - useEffect();
+   * - start timer => make api call after 200 ms
+   * 
+   * key - ip
+   * - destory the component
+   * - useEffect();
+   * - start timer => make api call after 200 ms
+   * 
+   * setTimeout(200)  after 200ms is passed then it automatically makes an api call.
+   * 
+   */
+
   const getSearchSuggesions = async () => {
     console.log('API Call - '+ searchQuery);
     const data = await fetch(YOUTUBE_SEARCH_API+ searchQuery);
