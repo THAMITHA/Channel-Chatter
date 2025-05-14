@@ -52,15 +52,29 @@ const Head = () => {
         </a>
       </div>
     <div className='col-span-10 px-10'>
-      <input 
-        className="w-1/2 border border-gray-400 p-2 rounded-l-full" 
-        type="text"
-        value= {searchQuery}
-        onChange= {(e)=>setSearchQuery(e.target.value)} 
-      />
-      <button className="border border-gray-400 px-5 py-2 rounded-r-full bg-gray-100">
-        🔍
-      </button>
+      <div>
+        <input 
+          className="px-5 w-1/2 border border-gray-400 p-2 rounded-l-full" 
+          type="text"
+          value= {searchQuery}
+          onChange= {(e)=>setSearchQuery(e.target.value)} 
+        />
+        <button className="border border-gray-400 px-5 py-2 rounded-r-full bg-gray-100">
+          🔍
+        </button>
+      </div>
+      <div className='fixed bg-white py-2 px-5 w-[31rem] shadow-lg rounded-lg'>
+        <ul>
+          <li>🔍 Iphone</li>
+          <li>🔍 Iphone pro</li>
+          <li>🔍 Iphone pro</li>
+          <li>🔍 Iphone pro</li>
+          <li>🔍 Iphone pro</li>
+          <li>🔍 Iphone pro</li>
+          <li>🔍 Iphone pro</li>
+          <li>🔍 Iphone pro</li>
+        </ul>
+      </div>
     </div>
     <div className='col-1'>
       <img className="h-12"
