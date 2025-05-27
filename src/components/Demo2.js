@@ -1,10 +1,13 @@
-import React from 'react'
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const Demo2 = () => {
     const [y, setY] = useState(10)
     let x = 0;
-    
+    const ref = useRef(0)
+    console.log(ref)
+    /** not like => ref = 0
+     * ref = { current:0 }
+     */
   return (
     <div className='m-4 p-2 bg-slate-50 border border-black w-96 h-96'>
     <div>
@@ -12,7 +15,7 @@ const Demo2 = () => {
          onClick={()=>{
                 x=x+1;
                 console.log("x= "+ x)
-            }}>Increase x</button>
+            }}>Increase X</button>
         <span className='font-bold text-xl'>Let = {x}</span>
         
     </div>
@@ -23,6 +26,14 @@ const Demo2 = () => {
             }}>Increase Y</button>
         <span className='font-bold text-xl'>State = {y}</span>
         
+    </div>
+    <div>
+        <button className="bg-green-100 px-2 m-4"
+         onClick={()=>{
+                ref.current = ref.current + 1;
+                console.log(ref.current)
+            }}>Increase Ref</button>
+        <span className='font-bold text-xl'>Ref = {ref.current}</span>
     </div>
     </div>
   )
